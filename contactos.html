@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contactos-cordoba</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <h1>CONTACTANOS</h1>
     </header>
+
+
     <nav>
         <ul>
             <li> <a href="index.html">inicio</a> </li>
@@ -17,11 +19,38 @@
         </ul>
     </nav>
     <main>
-        <section>
-            Nombre y Apellido<input type="text">
-            Telefono<input type="number">
-        </section>
-        
+        <form id="contacto-form">
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="Apellido" name="Apellido" required>
+
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="Telefono">Telefono</label>
+            <input type="number" id="Telefono" name="Telefono" required>
+
+            <label for="mensaje">mensaje</label>
+            <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+
+            <button type="submit">enviar</button>
+        </form>
     </main>
+
+    <footer id="contacto">
+        <p>&copy;2025 ciudad de cordoba - pagina creada por gustavo yevara</p>
+    </footer>
+
+    <script>
+        function enviarformulario(){
+            event.preventDefault();
+
+            var Apellido=document.getElementById("apellido").value;
+            var nombre=document.getElementById("nombre").value;
+
+            alert("nombre:"+nombre" y apellido:"+Apellido");
+
+        }
+
+    </script>
 </body>
 </html>
