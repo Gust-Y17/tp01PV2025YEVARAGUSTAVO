@@ -11,6 +11,7 @@
         <h1>CONTACTANOS</h1>
     </header>
 
+    <div id="logo"> <img src="assets/img/log-cont.jpg" alt="logo"> </div>
 
     <nav>
         <ul>
@@ -19,35 +20,44 @@
         </ul>
     </nav>
     <main>
-        <form id="contacto-form">
-            <label for="Apellido">Apellido</label>
-            <input type="text" id="Apellido" name="Apellido" required>
-
-            <label for="nombre">nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="Telefono">Telefono</label>
-            <input type="number" id="Telefono" name="Telefono" required>
-
-            <label for="mensaje">mensaje</label>
-            <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
-
-            <button type="submit">enviar</button>
-        </form>
+            <form id="contacto-form">
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" name="Apellido" required>
+    
+                <label for="nombre">nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="Telefono">Telefono</label>
+                <input type="number" id="Telefono" name="Telefono" required>
+    
+                <label for="mensaje">mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+    
+                <button type="submit">enviar</button>
+            </form>
+        
     </main>
 
-    <footer id="contacto">
-        <p>&copy;2025 ciudad de cordoba - pagina creada por gustavo yevara</p>
+    <footer id="pie">
+        <p>&copy;2025 CIUDAD-CORDOBA-CONTACTOS &compfn;GY </p>
     </footer>
 
     <script>
+        //funcion que se ejecuta cuando se hace clik en el boton
         function enviarformulario(){
+
+            //evita que el formulario se envie y la pagina se recargue
             event.preventDefault();
 
-            var Apellido=document.getElementById("apellido").value;
+            //obtener los valores de los inputs
+            var Apellido=document.getElementById("Apellido").value;
             var nombre=document.getElementById("nombre").value;
 
-            alert("nombre:"+nombre" y apellido:"+Apellido");
+            //muestra los valores en la consola
+            console.log("nombre:", nombre);
+            console.log("Apellido", Apellido);
+
+            alert("nombre: "+nombre+ "y Apellido: "+Apellido);
 
         }
 

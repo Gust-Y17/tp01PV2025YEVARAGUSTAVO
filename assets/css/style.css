@@ -37,22 +37,22 @@ main{
 }
 aside{
     display: flex;
-    width: 700px;
+    width: 800px;
     height: 430px;
+
 }
 
 aside img{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .8;
+    opacity: .9;
     transition: .5s ease;
 }
 aside img:hover{
-      cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(200%);
+    cursor: crosshair;
+    width: 350px;
+    filter: contrast(150%);
 }
 
 #cult{
@@ -64,7 +64,7 @@ section img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .8;
+    opacity: .9;
     transition: .5s ease;
 }
 section img:hover{
@@ -77,4 +77,19 @@ article{
     background-color: rgb(247, 206, 145);
     padding: 10px;
     border: 20px;
+}
+
+#logo img{
+    text-align: center;
+    width:90%;
+    object-fit: cover;
+    padding: 5%;
+
+}
+#pie{
+    height: 100px;
+    max-height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(109, 248, 186);
 }
