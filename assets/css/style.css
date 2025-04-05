@@ -87,9 +87,8 @@ article{
 
 }
 #pie{
-    height: 100px;
-    max-height: 100%;
-    overflow: hidden;
+    margin: 5%;
+    height: 200px;
     text-align: center;
     background-color: rgb(109, 248, 186);
 }
